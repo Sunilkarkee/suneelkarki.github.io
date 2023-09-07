@@ -1,0 +1,54 @@
+
+#services{
+    padding: 40px 0;
+}
+
+.services-list{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+    
+    
+.services-list div{
+background:#262626;
+padding: 20px;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+border-radius: 10px;
+transition: background 0.5s, transform 0.5s;
+}
+ 
+.services-list div i{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+.services-list div h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    /*text-decoration:underline rgb(11, 163, 47);*/
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.services-list a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translatey(-10px);
+    color:#262626;
+}
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://kit.fontawesome.com/6dbf36b2ee.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/6dbf36b2ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-solid fa-rectangle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                        <p>Hi, I am <span>Suneel Karki</span></p>
+                        <p>And I am a <span id="element"></span></p>
+                </div>
+            </div>    
+        </div>
+    </header>
+
+    <!-- -----------------------------------main-------------------------------- -->
+
+    <main>
+
+        <!-- ---------------------------About---------------------------------------- -->
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/img.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <P>"I am a passionate computer science engineer with expertise in web and software development, AI-powered chatbot creation, and content writing. 
+                            My journey in technology has allowed me to craft user-friendly websites and robust applications.
+                            I'm fascinated by chatbots and enjoy creating AI-driven solutions. Besides my technical skills, I excel in content creation, shaping ideas into compelling narratives. 
+                            I'm committed to lifelong learning and finding innovative digital solutions to bring your ideas to life."
+                        </P>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX :</span><br>Designing Web/App interface</li>
+                                <li><span>Web Development :</span><br>Web app Development</li>
+                                <li><span>Python Development :</span><br>Web/Software Developmet</li>
+                                <li><span>Java :</span><br>Web/software Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>B.E Computer Science(2017-2022) :</span><br>Visveswariya Technological
+                                    Institute</li>
+                                <li><span>Higher Secondary Level(2014-2016) :</span><br>National Academy of Science
+                                    and Technology.</li>
+                                <li><span>Secondary Level(-2014) :</span><br>Glee Academy School</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UI/UX :</span><br>Worked 0n Own Project</li>
+                                <li><span>Web Development :</span><br>Worked on Own Project</li>
+                                <li><span>Python Development :</span><br>Worked on Own Project</li>
+                                <li><span>Java :</span><br>Worked 0n Own Project</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------------------services--------------------- -->
+
+        <section id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati corrupti
+                            suscipit dolorem expedita, amet</p>
+                        <a>learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Developmet</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati corrupti
+                            suscipit dolorem expedita, amet</p>
+                        <a>learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-bots"></i>
+                        <h2>ChatBot Development</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati corrupti
+                            suscipit dolorem expedita, amet</p>
+                        <a>learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>App Development</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati corrupti
+                            suscipit dolorem expedita, amet</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h2>Content Writing</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt obcaecati corrupti
+                            suscipit dolorem expedita, amet</p>
+                        <a>learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------------portfolio------------------------- -->
+        <section id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/chatbt.png">
+                        <div class="layer">
+                            <h3>AI-ChatBot</h3>
+                            <p>Handle your social media with ease.
+                                This chatbot makes your messaging more easy.</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/marry.png">
+                        <div class="layer">
+                            <h3>Matrimonial Website</h3>
+                            <p>Find your lifepartner from all-around the world.</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/music.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>play your favourite muisc and songs seamlessly.
+                                Download it from playStore.</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/exam.png">
+                        <div class="layer">
+                            <h3>Online eamination System</h3>
+                            <p>Make examination system more advanced and easy.</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i>></a>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn">See More</a>
+            </div>
+        </section>
+
+        <!-- -------------------------contact-------------------- -->
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane fa-beat-fade"></i> suneelkshetri@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +977-9860787242</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook fa-bounce"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin fa-bounce"></i></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram fa-bounce"></i></a>
+                            <a href=""><i class="fa-brands fa-discord fa-bounce"></i></a>
+                        </div>
+                        <a href="images/sunilkarki.pdf" download class="btn btn-2">Download CV</a>
+
+
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Full Name" required>
+                            <input type="email" name="Email" placeholder="E-mail" required>
+                            <input id="Phonenumber" name="Phone" placeholder="Contact Number">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p>copyright © Suneel <i class="fa-brands fa-wolf-pack-battalion fa-flip"></i></p>
+            </div>
+        </footer>
+    </main>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>
